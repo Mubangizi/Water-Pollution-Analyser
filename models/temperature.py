@@ -17,7 +17,6 @@ class Temperature(db.Model):
         """ initialize with name temp_value """
         self.temp_value = temp_value
 
-
     def save(self):
         db.session.add(self)
         db.session.commit()

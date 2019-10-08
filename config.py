@@ -1,14 +1,14 @@
 import os
 
 
-class Development(Base):
+class Development():
     """ development config """
 
     DEBUG = (True,)
     SQLALCHEMY_DATABASE_URI = "postgresql:///water_pollution_db"
 
 
-class Testing(Base):
+class Testing():
     """ test environment config """
 
     TESTING = (True,)
@@ -18,7 +18,7 @@ class Testing(Base):
     SQLALCHEMY_DATABASE_URI = "postgresql:///water_pollution_db_testing"
 
 
-class Production(Base):
+class Production():
     """ production config """
 
     DEBUG = (False,)

@@ -26,12 +26,12 @@ def create_app(config_name):
 
     # register app with the db
     db.init_app(app)
-    
+
     return app
 
 # create app instance using running config
-app = create_app(os.getenv('FLASK_ENV'))
-
+# app = create_app(os.getenv('FLASK_ENV'))
+app = create_app("development")
 
 if __name__ == '__main__':
     app.run()
